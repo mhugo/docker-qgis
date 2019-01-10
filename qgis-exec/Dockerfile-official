@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
@@ -7,7 +7,7 @@ RUN apt-get update \
     && apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 \
                    --keyserver-options timeout=10 \
                    --recv-keys 61E0A086749E463EDE502255CAEB3DC3BDF7FB45 \
-    && echo "deb http://qgis.org/debian stretch main" >> /etc/apt/sources.list.d/qgis.list \
+    && echo "deb http://qgis.org/debian buster main" >> /etc/apt/sources.list.d/qgis.list \
     && apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
         multiwatch \
