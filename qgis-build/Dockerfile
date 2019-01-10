@@ -46,6 +46,7 @@ RUN apt-get update \
         lighttpd \
         locales \
         ninja-build \
+        ocl-icd-opencl-dev \
         opencl-headers \
         pkg-config \
         poppler-utils \
@@ -85,6 +86,7 @@ RUN apt-get update \
         qtpositioning5-dev \
         qttools5-dev \
         qttools5-dev-tools \
+        saga \
         spawn-fcgi \
         txt2tags \
         xauth \
